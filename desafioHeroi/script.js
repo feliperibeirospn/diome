@@ -1,35 +1,22 @@
-let hero = { nome: 'joão', xp: '900' }
+let hero = { nome: 'joão', xp: 5000 };
 
-    switch (hero) {
-        case hero.xp <= 1000:
-            console.log(`O herói ${hero.nome} está no nível ferro`)
-            break;
-        case hero.xp <= 2000:
-            console.log(`O herói ${hero.nome} está no nível Bronze`)
-            break;
-        case hero.xp <= 5000:
-            console.log(`O herói ${hero.nome} está no nível prata`)
-            break;
-        case hero.xp <= 7000:
-            console.log(`O herói ${hero.nome} está no nível Ouro`)
-            break;
-        case hero.xp <= 8000:
-            console.log(`O herói ${hero.nome} está no nível Platina`)
-            break;
-        case hero.xp <= 9000:
-            console.log(`O herói ${hero.nome} está no nível Ascendente`)
-            break;
-        case hero.xp <= 10000:
-            console.log(`O herói ${hero.nome} está no nível Imortal`)
-            break;
-        case hero.xp > 10000:
-            console.log(`O herói ${hero.nome} está no nível Radiante`)
-            break;
-
-    }
-
-
-
+if (hero.xp <= 1000) {
+  console.log(`O herói ${hero.nome} está no nível ferro`);
+} else if (hero.xp <= 2000) {
+  console.log(`O herói ${hero.nome} está no nível Bronze`);
+} else if (hero.xp <= 5000) {
+  console.log(`O herói ${hero.nome} está no nível prata`);
+} else if (hero.xp <= 7000) {
+  console.log(`O herói ${hero.nome} está no nível Ouro`);
+} else if (hero.xp <= 8000) {
+  console.log(`O herói ${hero.nome} está no nível Platina`);
+} else if (hero.xp <= 9000) {
+  console.log(`O herói ${hero.nome} está no nível Ascendente`);
+} else if (hero.xp <= 10000) {
+  console.log(`O herói ${hero.nome} está no nível Imortal`);
+} else {
+  console.log(`O herói ${hero.nome} está no nível Radiante`);
+}
 
 /* Se XP for menor do que 1.000 = Ferro
 Se XP for entre 1.001 e 2.000 = Bronze
